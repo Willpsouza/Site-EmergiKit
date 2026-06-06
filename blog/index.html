@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog • EmergiKit</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff453a">
+  <meta name="author" content="William | W.S. Dev"/>
+  <style>
+    .blog-list { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .post-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; transition: all 0.2s; }
+    .post-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .post-date { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px; }
+    .post-title { font-size: 1.3rem; margin-bottom: 8px; }
+    .post-title a { color: var(--text); text-decoration: none; }
+    .post-title a:hover { color: var(--primary); }
+    .post-excerpt { color: var(--text-dim); line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="header-logo"><span class="header-logo-text">EmergiKit</span></a>
+      <nav class="header-nav"><a href="../index.html#funcionalidades">Funcionalidades</a><a href="../index.html#faq">Perguntas</a></nav>
+      <div class="header-actions"><a href="../index.html" class="btn btn-outline">Voltar</a></div>
+    </div>
+  </header>
+  <main>
+    <div class="blog-list">
+      <h1 style="margin-bottom:30px">Blog EmergiKit</h1>
+      
+      <article class="post-card">
+        <div class="post-date">05 Jun 2026</div>
+        <h2 class="post-title"><a href="post-01-sos-com-seguranca.html">Como usar o SOS com segurança</a></h2>
+        <p class="post-excerpt">Entenda o countdown de 3 segundos, quando cancelar e como garantir que seus contatos recebam o alerta corretamente.</p>
+      </article>
+
+      <article class="post-card">
+        <div class="post-date">28 Mai 2026</div>
+        <h2 class="post-title"><a href="post-02-como-preparar-carteira.html">Preparando sua Carteira Médica</a></h2>
+        <p class="post-excerpt">Passo a passo para cadastrar tipo sanguíneo, alergias e contatos de forma rápida e segura.</p>
+      </article>
+    </div>
+  </main>
+  <footer role="contentinfo"><div class="container"><div class="footer-bottom"><p>© <script>document.write(new Date().getFullYear())</script> EmergiKit</p></div></div></footer>
+</body>
+</html>

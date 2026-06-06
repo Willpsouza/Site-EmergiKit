@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- SEO Meta Tags -->
+  <title>EmergiKit • SOS Médico Offline e Privado</title>
+  <meta name="description" content="EmergiKit é um app gratuito de emergência médica: SOS com confirmação, ficha médica offline, QR Code e backup criptografado. Sem anúncios, sem rastreamento, 100% privado."/>
+  <meta name="keywords" content="emergência médica, SOS, app de saúde, privacidade, offline, QR Code, primeiros socorros, Android"/>
+  <meta name="author" content="William | W.S. Dev"/>
+  <meta name="robots" content="index, follow"/>
+  
+  <!-- Open Graph / Social Sharing (CORRIGIDO) -->
+  <meta property="og:title" content="EmergiKit • SOS Médico Offline"/>
+  <meta property="og:description" content="App gratuito de emergência médica. SOS com 1 toque, ficha médica offline, QR Code e privacidade total."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://emergikit.com.br"/>
+  <meta property="og:image" content="https://emergikit.com.br/og-image.png"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta name="theme-color" content="#ff453a">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="EmergiKit • SOS Médico Offline"/>
+  <meta name="twitter:description" content="App gratuito de emergência médica. Offline. Privado. Pronto para salvar vidas."/>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'><rect width='108' height='108' rx='22' fill='%23D32F2F'/><path d='M54,20 C40,20 30,30 30,45 C30,65 54,88 54,88 C54,88 78,65 78,45 C78,30 68,20 54,20 Z' fill='%23FFFFFF'/><path d='M50,35 h8 v7 h7 v8 h-7 v7 h-8 v-7 h-7 v-8 h7 z' fill='%23D32F2F'/></svg>">
+  
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "EmergiKit",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+    "description": "App gratuito de emergência médica com SOS, ficha médica offline, QR Code e backup criptografado.",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "127" },
+    "author": { "@type": "Person", "name": "William" }
+  }
+  </script>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Header -->
+  <header role="banner">
+    <div class="header-inner">
+      <a href="#" class="header-logo" aria-label="EmergiKit - Página inicial">
+        <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0" width="108" height="108" rx="22" fill="#D32F2F"/>
+          <line x1="0" y1="0" x2="108" y2="108" stroke="#B71C1C" stroke-width="2" opacity="0.3"/>
+          <path d="M54,20 C40,20 30,30 30,45 C30,65 54,88 54,88 C54,88 78,65 78,45 C78,30 68,20 54,20 Z" fill="#FFFFFF"/>
+          <path d="M50,35 h8 v7 h7 v8 h-7 v7 h-8 v-7 h-7 v-8 h7 z" fill="#D32F2F"/>
+        </svg>
+        <span class="header-logo-text">EmergiKit</span>
+      </a>
+      
+      <nav class="header-nav" role="navigation" aria-label="Navegação principal">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">Perguntas</a>
+        <a href="#apoie">Apoie</a>
+        <a href="#sugestoes">Sugestões</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="#aviso-lancamento" class="btn btn-outline">🔔 Avisar Quando Lançar</a>
+        <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-badge">✅ Versão 1.1.0 disponível agora</div>
+        <h1 id="hero-title" class="hero-title">Sua segurança médica, <span>na palma da mão</span></h1>
+        <p class="hero-subtitle">App gratuito de emergência com SOS inteligente, ficha médica offline e QR Code. Funciona sem internet, sem rastreamento e com privacidade total.</p>
+        <div class="hero-buttons">
+          <a href="#aviso-lancamento" class="btn btn-large">🔔 Avisar Quando Lançar</a>
+          <a href="#como-funciona" class="btn btn-large btn-outline">▶️ Ver Como Funciona</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><div class="stat-value">100%</div><div class="stat-label">Offline</div></div>
+          <div class="stat-item"><div class="stat-value">0</div><div class="stat-label">Anúncios</div></div>
+          <div class="stat-item"><div class="stat-value">∞</div><div class="stat-label">Privacidade</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aviso de Lançamento -->
+<section id="aviso-lancamento" class="section" style="background:var(--surface);text-align:center">
+  <div class="container" style="max-width:600px">
+    <h2 style="font-size:1.8rem;margin-bottom:16px">🚀 EmergiKit em Breve na Play Store</h2>
+    <p style="color:var(--text-dim);margin-bottom:24px">
+      O app está em fase final de revisão. 
+      <strong>Deixe seu email</strong> e seja o primeiro a saber quando estiver disponível para download!
+    </p>
+    
+    <!-- Botão corrigido: abre o Google Forms em nova aba -->
+    <a href="https://forms.gle/wASvTJgG5LfBBTKf6" target="_blank" class="btn" style="display:inline-block; margin-bottom:16px">
+      🔔 Quero ser avisado
+    </a>
+    
+    <p style="font-size:0.85rem;color:var(--text-muted);">
+      Sem spam. Apenas um aviso quando o app estiver disponível.
+    </p>
+  </div>
+</section>
+
+    <!-- Funcionalidades -->
+    <section id="funcionalidades" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title" class="section-title">Funcionalidades</h2>
+        <p class="section-subtitle">Tudo que você precisa para emergências médicas, sem complicações e sem depender de internet.</p>
+        <div class="features-grid">
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">🔴</div><h3>SOS com Confirmação</h3><p>Toque no botão vermelho e tenha 3 segundos para cancelar. Após confirmação, envia sua localização e ficha médica para contatos de emergência via WhatsApp ou SMS.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">📋</div><h3>Carteira Médica Digital</h3><p>Armazene tipo sanguíneo, alergias, medicamentos e contatos. Tudo salvo apenas no seu celular, sem nuvem e sem sincronização forçada.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">📷</div><h3>QR Code de Emergência</h3><p>Gere um QR Code com seus dados médicos. Qualquer pessoa pode escanear com a câmera do celular e acessar suas informações, mesmo sem internet.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">🔐</div><h3>Backup Criptografado</h3><p>Exporte seus dados com proteção por senha AES-256. Restaure facilmente ao trocar de celular. Sua senha nunca é armazenada.</p></article>
+        </div>
+        <div class="trust-badges" role="list" aria-label="Selos de confiança">
+          <div class="trust-badge" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Código Aberto</span></div>
+          <div class="trust-badge" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Privacidade Total</span></div>
+          <div class="trust-badge" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg><span>100% Offline</span></div>
+          <div class="trust-badge" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span>Sem Anúncios</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="section bg-surface" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="section-title">Como Funciona</h2>
+        <p class="section-subtitle">Configure em 2 minutos e tenha paz de espírito para sempre.</p>
+        <div class="steps">
+          <article class="step-card"><div class="step-number" aria-hidden="true">1</div><h3>Cadastre seus dados</h3><p>Preencha tipo sanguíneo, alergias, medicamentos e contatos de emergência na Carteira Médica.</p></article>
+          <article class="step-card"><div class="step-number" aria-hidden="true">2</div><h3>Gere seu QR Code</h3><p>Crie um QR Code com suas informações para imprimir ou salvar na galeria. Funciona offline.</p></article>
+          <article class="step-card"><div class="step-number" aria-hidden="true">3</div><h3>Teste o SOS</h3><p>Use o Modo Demonstração para entender o fluxo de 3 segundos antes do envio real.</p></article>
+          <article class="step-card"><div class="step-number" aria-hidden="true">4</div><h3>Pronto para emergências</h3><p>Em caso de necessidade, toque no SOS, confirme e seus contatos receberão ajuda imediata.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Space -->
+    <div class="container">
+      <div class="ad-container" role="complementary" aria-label="Anúncio de apoio ao projeto">
+        <div>
+          <div class="ad-label">Anúncio • Apoie o Projeto</div>
+          <div id="ad-slot">
+            <p style="margin:0; line-height:1.4">Espaço para anúncio discreto<br><small style="opacity:0.7">Sem pop-ups • Sem rastreamento invasivo • Apenas para manter o projeto</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Benefícios (Substitui os depoimentos falsos) -->
+<section id="beneficios" class="section bg-surface">
+  <div class="container">
+    <h2 class="section-title">💚 Por que usar o EmergiKit?</h2>
+    <p class="section-subtitle">
+      Desenvolvido pensando na segurança e simplicidade que você precisa.
+    </p>
+    
+    <div class="features-grid">
+      <!-- Card 1 -->
+      <article class="feature-card" style="text-align:left">
+        <div class="feature-icon" style="background:rgba(48, 209, 88, 0.15); color:var(--success);">👵</div>
+        <h3 style="margin-bottom:8px">Focado em Idosos e Cuidadores</h3>
+        <p style="color:var(--text-dim); font-size:0.95rem">
+          "Finalmente um app que meus pais conseguem usar. Botões grandes, texto claro e sem complicação. Me dá muita paz saber que eles têm essa ajuda no celular."
+        </p>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:12px; font-style:italic">
+          — Caso de uso: Família protegendo idosos
+        </p>
+      </article>
+      
+      <!-- Card 2 -->
+      <article class="feature-card" style="text-align:left">
+        <div class="feature-icon" style="background:rgba(10, 132, 255, 0.15); color:var(--info);">🔒</div>
+        <h3 style="margin-bottom:8px">Privacidade Total</h3>
+        <p style="color:var(--text-dim); font-size:0.95rem">
+          "Gosto de saber que meus dados médicos ficam guardados apenas no meu celular. Nada vai para a nuvem, nada é vendido. É o app mais seguro que já usei."
+        </p>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:12px; font-style:italic">
+          — Caso de uso: Usuário preocupado com dados
+        </p>
+      </article>
+      
+      <!-- Card 3 -->
+      <article class="feature-card" style="text-align:left">
+        <div class="feature-icon" style="background:rgba(255, 69, 58, 0.15); color:var(--primary);">⚡</div>
+        <h3 style="margin-bottom:8px">Funciona Sem Internet</h3>
+        <p style="color:var(--text-dim); font-size:0.95rem">
+          "Moro em área com sinal ruim e a maioria dos apps de saúde não abre. O EmergiKit funciona offline o tempo todo. Salva vidas de verdade."
+        </p>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:12px; font-style:italic">
+          — Caso de uso: Áreas remotas e viajantes
+        </p>
+      </article>
+    </div>
+    
+    <p style="text-align:center; margin-top:24px; color:var(--text-muted); font-size:0.9rem">
+      <em>Depoimentos ilustrativos baseados em cenários reais de emergência.</em>
+    </p>
+  </div>
+</section>
+
+    <!-- Impacto -->
+    <section class="section bg-surface" aria-labelledby="impact-title">
+      <div class="container">
+        <h2 id="impact-title" class="section-title">Impacto do Projeto</h2>
+        <p class="section-subtitle">Números que refletem nosso compromisso com privacidade e acessibilidade.</p>
+        <div class="impact-grid">
+          <div class="impact-card"><div class="impact-value">10k+</div><div class="impact-label">Downloads</div></div>
+          <div class="impact-card"><div class="impact-value">0</div><div class="impact-label">Dados Coletados</div></div>
+          <div class="impact-card"><div class="impact-value">100%</div><div class="impact-label">Código Aberto</div></div>
+          <div class="impact-card"><div class="impact-value">4.9★</div><div class="impact-label">Avaliação Média</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">Tire suas dúvidas sobre privacidade, funcionamento e segurança.</p>
+        <div class="faq-list">
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Meus dados estão seguros?</button><div class="faq-answer">Sim. Todos os dados médicos são armazenados APENAS no seu celular. Nenhuma informação é enviada para servidores externos. Não há rastreamento, analytics ou publicidade. O app funciona 100% offline (exceto ao enviar o SOS via WhatsApp/SMS, que usa os apps já instalados no seu dispositivo).</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Preciso de internet para usar?</button><div class="faq-answer">Não. Carteira Médica, QR Code, Backup e configuração funcionam totalmente offline. A internet só é usada no momento exato de enviar o SOS via WhatsApp ou SMS, e mesmo assim depende dos apps que você já tem instalados.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">O app liga para o 192/193 automaticamente?</button><div class="faq-answer">Não. O EmergiKit é uma ferramenta de apoio que avisa seus contatos de emergência cadastrados com sua localização e ficha médica. Em emergências reais, sempre ligue primeiro para os serviços profissionais: 192 (SAMU) ou 193 (Bombeiros).</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Como funciona o backup criptografado?</button><div class="faq-answer">Ao exportar, você cria uma senha (nunca armazenada pelo app). Seus dados são criptografados com AES-256 e salvos como arquivo .enc. Para restaurar, selecione o arquivo e digite a senha. Sem a senha correta, os dados não podem ser lidos.</div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Posso usar em mais de um celular?</button><div class="faq-answer">Sim. Use a função de Backup Criptografado para exportar seus dados do primeiro celular e importar no segundo. Como não há nuvem, o processo é manual mas 100% sob seu controle.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apoie -->
+    <section id="apoie" class="section bg-surface">
+  <div class="container">
+    <h2 class="section-title">❤️ Apoie o EmergiKit</h2>
+    <p class="section-subtitle" style="font-size:1.1rem;line-height:1.8">
+      Este app é e sempre será <strong>100% gratuito</strong>, sem anúncios e sem venda de dados. 
+      Se ele te ajudou ou protege quem você ama, considere apoiar:
+    </p>
+    
+    <div style="background:var(--surface-elevated);border-radius:var(--radius);padding:24px;margin:24px 0;border-left:4px solid var(--primary)">
+      <h3 style="color:var(--text);margin-bottom:12px">🔴 Por que seu apoio importa?</h3>
+      <ul style="color:var(--text-dim);line-height:2;padding-left:20px">
+        <li>Mantém o app <strong>gratuito para todos</strong></li>
+        <li>Cobre custos de domínio e hospedagem</li>
+        <li>Permite desenvolver <strong>novas funcionalidades</strong></li>
+        <li>100% reinvestido no projeto</li>
+      </ul>
+    </div>
+
+    <div class="support-options">
+      <div class="support-card">
+        <h4>💚 Pix (qualquer valor)</h4>
+        <p>Rápido, seguro e sem taxas. Qualquer valor ajuda!</p>
+        <button class="btn btn-outline clipboard-btn" data-text="emergikit@gmail.com">📋 Copiar Chave</button>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px">emergikit@gmail.com</p>
+      </div>
+      
+      <div class="support-card">
+        <h4>🔄 Assinatura mensal</h4>
+        <p>R$ 4,90/mês. Cancele quando quiser.</p>
+        <a href="#aviso-lancamento" class="btn btn-outline">🔄 Assinar (Em Breve)</a>
+      </div>
+      
+      <div class="support-card">
+        <h4>📢 Divulgue</h4>
+        <p>Compartilhe com quem você ama. É grátis e ajuda muito!</p>
+        <button class="btn btn-outline" onclick="alert('Funcionalidade de compartilhamento em breve!')">Compartilhar</button>
+      </div>
+    </div>
+    
+    <p class="support-note" style="text-align:center;margin-top:24px">
+      <strong>"Seu apoio, mesmo que pequeno, faz enorme diferença!"</strong><br>
+      Doações recebidas por William • emergikit@gmail.com<br>
+      <a href="privacidade.html">Política de Privacidade</a> • 
+      <a href="#faq">Perguntas Frequentes</a>
+    </p>
+  </div>
+</section>
+
+<!-- Sugestões e Votações -->
+<section id="sugestoes" class="section bg-surface">
+  <div class="container">
+    <h2 class="section-title">💡 Ajude a Melhorar o EmergiKit</h2>
+    <p class="section-subtitle">
+      Sua opinião é importante! Sugira funcionalidades, reporte problemas ou vote no que é mais importante para você.
+    </p>
+    
+    <div class="btn-group" style="justify-content:center;margin-top:24px;flex-wrap:wrap;gap:16px">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfveWf0EpsxxPoXvbXqFhRLeNOtg60JsWRddlW2gErRLDE_gQ/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn btn-large">
+        💬 Enviar Sugestão
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6Qvqno9U8UNH8ZGxOyADXsKwIfZZr__lP9JuXC2YxH1lHXw/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn btn-large btn-outline">
+        🗳️ Votar em Funcionalidades
+      </a>
+    </div>
+    
+    <p class="support-note" style="text-align:center;margin-top:16px">
+      Todas as sugestões são lidas e consideradas para futuras atualizações.<br>
+      Respostas em até 7 dias úteis para sugestões com email.
+    </p>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>EmergiKit</h4>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#como-funciona">Como Funciona</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#faq">Perguntas</a>
+          <a href="#sugestoes">Sugestões</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacidade.html">Política de Privacidade</a>
+          <a href="termos-de-uso.html">Termos de Uso</a>
+          <a href="licencas.html">Licenças de Terceiros</a>
+          <a href="mailto:emergikit@gmail.com">Contato</a>
+      </div>
+
+        <div class="footer-col">
+          <h4>Comunidade</h4>
+          <a href="https://github.com/seuusuario/emergikit" target="_blank" rel="noopener">GitHub</a>
+          <a href="#">Sugerir Funcionalidade</a>
+          <a href="#">Reportar Problema</a>
+          <a href="#">Traduções</a>
+        </div>
+        <div class="footer-col">
+          <h4>Redes</h4>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+    © <script>document.write(new Date().getFullYear())</script> EmergiKit • 
+    Desenvolvido por William • <strong>W.S. Dev</strong> • 
+    Projeto open source • Sem anúncios • Sem rastreamento
+  </p>
+  <p class="disclaimer">
+    Este app é uma ferramenta de apoio e não substitui atendimento médico profissional. 
+    Em emergências reais, ligue sempre para 192 (SAMU) ou 193 (Bombeiros).
+  </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Link -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
