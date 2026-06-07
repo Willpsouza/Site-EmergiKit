@@ -1,15 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página Principal -->
   <url>
     <loc>https://emergikit.com.br</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Páginas Legais -->
   <url>
     <loc>https://emergikit.com.br/privacidade.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog Index -->
+  <url>
+    <loc>https://emergikit.com.br/blog/index.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Posts do Blog (por categoria) -->
+  <!-- 📱 Dicas do App -->
+  <url>
+    <loc>https://emergikit.com.br/blog/post-01-sos-com-seguranca.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://emergikit.com.br/blog/post-03-qr-code-guia-completo.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://emergikit.com.br/blog/post-09-backup-dados-medicos.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 🚑 Primeiros Socorros -->
+  <url>
+    <loc>https://emergikit.com.br/blog/post-06-primeiros-socorros-basicos.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 💚 Saúde Preventiva -->
+  <url>
+    <loc>https://emergikit.com.br/blog/post-02-como-preparar-carteira.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://emergikit.com.br/blog/post-05-organizar-medicamentos-casa.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://emergikit.com.br/blog/post-08-tipo-sanguineo-importancia.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 👵 Cuidados com Idosos -->
+  <url>
+    <loc>https://emergikit.com.br/blog/post-04-sinais-alerta-idosos.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 🔒 Privacidade & Saúde -->
+  <url>
+    <loc>https://emergikit.com.br/blog/post-07-privacidade-offline-saude.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

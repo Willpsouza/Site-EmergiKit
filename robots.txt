@@ -3,10 +3,17 @@
 User-agent: *
 Allow: /
 
-# Bloqueia rastreamento de arquivos desnecessários
-Disallow: /css/
-Disallow: /js/
-Disallow: /*.xml$
+# ✅ Permite CSS/JS para renderização correta no Google (mobile-first indexing)
+# Removido: Disallow: /css/ e /js/
+
+# Bloqueia arquivos sensíveis ou desnecessários
+Disallow: /node_modules/
+Disallow: /vscode/
+Disallow: /*.log$
+Disallow: /*.env$
+
+# Permite XML do sitemap (necessário para indexação)
+Allow: /sitemap.xml
 
 # Indica onde está o sitemap
 Sitemap: https://emergikit.com.br/sitemap.xml
