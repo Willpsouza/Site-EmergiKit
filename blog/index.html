@@ -3,47 +3,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Dicas de saúde, primeiros socorros e tutoriais do app EmergiKit. Informações práticas para emergências médicas offline.">
+  <meta name="author" content="William | W.S. Dev"/>
+  <meta name="theme-color" content="#ff453a">
   <title>Blog • EmergiKit</title>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#ff453a">
-  <meta name="author" content="William | W.S. Dev"/>
-  <style>
-    .blog-list { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    .post-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; transition: all 0.2s; }
-    .post-card:hover { border-color: var(--primary); transform: translateY(-2px); }
-    .post-date { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px; }
-    .post-title { font-size: 1.3rem; margin-bottom: 8px; }
-    .post-title a { color: var(--text); text-decoration: none; }
-    .post-title a:hover { color: var(--primary); }
-    .post-excerpt { color: var(--text-dim); line-height: 1.6; }
-  </style>
+  <link rel="manifest" href="../manifest.json">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Header -->
   <header role="banner">
     <div class="header-inner">
-      <a href="../index.html" class="header-logo"><span class="header-logo-text">EmergiKit</span></a>
-      <nav class="header-nav"><a href="../index.html#funcionalidades">Funcionalidades</a><a href="../index.html#faq">Perguntas</a></nav>
-      <div class="header-actions"><a href="../index.html" class="btn btn-outline">Voltar</a></div>
+      <a href="../index.html" class="header-logo" aria-label="EmergiKit - Página inicial">
+        <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0" width="108" height="108" rx="22" fill="#D32F2F"/>
+          <line x1="0" y1="0" x2="108" y2="108" stroke="#B71C1C" stroke-width="2" opacity="0.3"/>
+          <path d="M54,20 C40,20 30,30 30,45 C30,65 54,88 54,88 C54,88 78,65 78,45 C78,30 68,20 54,20 Z" fill="#FFFFFF"/>
+          <path d="M50,35 h8 v7 h7 v8 h-7 v7 h-8 v-7 h-7 v-8 h7 z" fill="#D32F2F"/>
+        </svg>
+        <span class="header-logo-text">EmergiKit</span>
+      </a>
+      
+      <nav class="header-nav" role="navigation" aria-label="Navegação do blog">
+        <a href="#dicas-app">Dicas do App</a>
+        <a href="#primeiros-socorros">Primeiros Socorros</a>
+        <a href="#saude-preventiva">Saúde Preventiva</a>
+        <a href="#privacidade-saude">Privacidade & Saúde</a>
+        <a href="../index.html">Site Principal</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="#aviso-lancamento" class="btn btn-outline">🔔 Avisar </a>
+        <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
     </div>
   </header>
-  <main>
-    <div class="blog-list">
-      <h1 style="margin-bottom:30px">Blog EmergiKit</h1>
-      
-      <article class="post-card">
-        <div class="post-date">05 Jun 2026</div>
-        <h2 class="post-title"><a href="post-01-sos-com-seguranca.html">Como usar o SOS com segurança</a></h2>
-        <p class="post-excerpt">Entenda o countdown de 3 segundos, quando cancelar e como garantir que seus contatos recebam o alerta corretamente.</p>
-      </article>
 
-      <article class="post-card">
-        <div class="post-date">28 Mai 2026</div>
-        <h2 class="post-title"><a href="post-02-como-preparar-carteira.html">Preparando sua Carteira Médica</a></h2>
-        <p class="post-excerpt">Passo a passo para cadastrar tipo sanguíneo, alergias e contatos de forma rápida e segura.</p>
-      </article>
+  <main id="main-content">
+    <!-- Introdução do Blog -->
+    <section style="background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%); padding: 60px 0 40px; border-bottom: 1px solid var(--border);">
+      <div class="container" style="text-align: center; max-width: 800px;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 16px; font-weight: 800;">Blog EmergiKit</h1>
+        <p style="color: var(--text-dim); font-size: 1.2rem; line-height: 1.6; margin-bottom: 24px;">
+          Dicas de saúde, tutoriais do app e informações sobre primeiros socorros. 
+          Conteúdo desenvolvido com responsabilidade para ajudar você e quem você ama.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px;">
+          <a href="#dicas-app" class="badge" style="text-decoration:none">📱 Dicas do App</a>
+          <a href="#primeiros-socorros" class="badge badge-success" style="text-decoration:none">🚑 Primeiros Socorros</a>
+          <a href="#saude-preventiva" class="badge" style="text-decoration:none">💚 Saúde Preventiva</a>
+          <a href="#privacidade-saude" class="badge" style="text-decoration:none">🔒 Privacidade & Saúde</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📱 DICAS DO APP -->
+    <section id="dicas-app" class="blog-section container">
+      <h2 class="section-title" style="font-size:1.5rem;margin:40px 0 20px;display:flex;align-items:center;gap:10px">
+        📱 Dicas do App
+      </h2>
+      <div class="blog-list">
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge" style="margin-right:8px">📱 Dicas do App</span>
+            10 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-03-qr-code-guia-completo.html">QR Code de Emergência: Guia Completo</a></h3>
+          <p class="post-excerpt">Aprenda a criar, salvar e usar seu QR Code médico. Funciona offline e pode salvar sua vida.</p>
+        </article>
+
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge" style="margin-right:8px">📱 Dicas do App</span>
+            07 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-01-sos-com-seguranca.html">Como usar o SOS com segurança</a></h3>
+          <p class="post-excerpt">Entenda o countdown de 3 segundos, quando cancelar e como garantir que seus contatos recebam o alerta corretamente.</p>
+        </article>
+
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge" style="margin-right:8px">📱 Dicas do App</span>
+            28 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-09-backup-dados-medicos.html">Backup de Dados Médicos: Como Proteger Suas Informações</a></h3>
+          <p class="post-excerpt">Aprenda a criar backups criptografados, gerenciar senhas e restaurar seus dados médicos com segurança. Guia prático para nunca perder informações vitais.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 🚑 PRIMEIROS SOCORROS -->
+    <section id="primeiros-socorros" class="blog-section container">
+      <h2 class="section-title" style="font-size:1.5rem;margin:40px 0 20px;display:flex;align-items:center;gap:10px">
+        🚑 Primeiros Socorros
+      </h2>
+      <div class="blog-list">
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge" style="margin-right:8px">🚑 Primeiros Socorros</span>
+            18 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-06-primeiros-socorros-basicos.html">Primeiros Socorros Básicos: O Que Fazer Enquanto o SAMU Não Chega</a></h3>
+          <p class="post-excerpt">Guia prático e seguro: engasgo, sangramento, queimaduras e desmaios. Saiba o que fazer (e evitar) enquanto aguarda o resgate.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 💚 SAÚDE PREVENTIVA -->
+    <section id="saude-preventiva" class="blog-section container">
+      <h2 class="section-title" style="font-size:1.5rem;margin:40px 0 20px;display:flex;align-items:center;gap:10px">
+        💚 Saúde Preventiva
+      </h2>
+      <div class="blog-list">
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge badge-success" style="margin-right:8px">💚 Saúde Preventiva</span>
+            05 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-02-como-preparar-carteira.html">Preparando sua Carteira Médica Digital</a></h3>
+          <p class="post-excerpt">Passo a passo para cadastrar tipo sanguíneo, alergias e contatos de forma rápida e segura.</p>
+        </article>
+
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge badge-success" style="margin-right:8px">💚 Saúde Preventiva</span>
+            15 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-05-organizar-medicamentos-casa.html">Como Organizar Medicamentos em Casa: Checklist Prático</a></h3>
+          <p class="post-excerpt">Aprenda a organizar medicamentos de forma segura: validade, dosagem, horários e armazenamento correto. Checklist completo + dicas práticas.</p>
+        </article>
+
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge badge-success" style="margin-right:8px">💚 Saúde Preventiva</span>
+            25 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-08-tipo-sanguineo-importancia.html">Tipo Sanguíneo: Por Que É Importante Saber e Como Descobrir</a></h3>
+          <p class="post-excerpt">Descubra por que saber seu tipo sanguíneo pode salvar vidas em emergências. Saiba como descobrir, entenda a compatibilidade básica e mantenha essa informação sempre acessível.</p>
+        </article>  
+      </div>
+    </section>
+
+    <!-- 👵 CUIDADOS COM IDOSOS (Placeholder) -->
+    <section id="cuidados-idosos" class="blog-section container">
+      <h2 class="section-title" style="font-size:1.5rem;margin:40px 0 20px;display:flex;align-items:center;gap:10px">
+        👵 Cuidados com Idosos
+      </h2>
+      <div class="blog-list">
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge" style="margin-right:8px">👵 Cuidados com Idosos</span>
+            12 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-04-sinais-alerta-idosos.html">5 Sinais de Alerta que Todo Idoso Deve Conhecer</a></h3>
+          <p class="post-excerpt">Confusão mental repentina, quedas frequentes e mudanças de comportamento podem indicar problemas de saúde. Saiba identificar e quando buscar ajuda.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 🔒 PRIVACIDADE & SAÚDE -->
+    <section id="privacidade-saude" class="blog-section container">
+      <h2 class="section-title" style="font-size:1.5rem;margin:40px 0 20px;display:flex;align-items:center;gap:10px">
+        🔒 Privacidade & Saúde
+      </h2>
+      <div class="blog-list">
+        <article class="post-card">
+          <div class="post-date">
+            <span class="badge" style="margin-right:8px">🔒 Privacidade & Saúde</span>
+            20 Jun 2026
+          </div>
+          <h3 class="post-title"><a href="post-07-privacidade-offline-saude.html">Privacidade em Apps de Saúde: Por Que o Offline é Mais Seguro?</a></h3>
+          <p class="post-excerpt">Descubra por que armazenar dados médicos localmente protege melhor sua privacidade. Entenda os riscos da nuvem e como o EmergiKit mantém tudo offline.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Espaço para Anúncio (Não invasivo) -->
+    <div class="container">
+      <div class="ad-container" role="complementary" aria-label="Anúncio de apoio ao projeto">
+        <div>
+          <div class="ad-label">Anúncio • Apoie o Projeto</div>
+          <div id="ad-slot">
+            <p style="margin:0; line-height:1.4">Espaço para anúncio discreto<br><small style="opacity:0.7">Sem pop-ups • Sem rastreamento • Apenas para manter o projeto</small></p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
-  <footer role="contentinfo"><div class="container"><div class="footer-bottom"><p>© <script>document.write(new Date().getFullYear())</script> EmergiKit</p></div></div></footer>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>EmergiKit</h4>
+          <a href="../index.html#funcionalidades">Funcionalidades</a>
+          <a href="../index.html#como-funciona">Como Funciona</a>
+          <a href="../index.html#beneficios">Benefícios</a>
+          <a href="../index.html#faq">Perguntas</a>
+          <a href="../index.html#apoie">Apoie</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="../privacidade.html">Política de Privacidade</a>
+          <a href="../termos-de-uso.html">Termos de Uso</a>
+          <a href="../licencas.html">Licenças de Terceiros</a>
+          <a href="mailto:emergikit@gmail.com">Contato</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Comunidade</h4>
+          <a href="https://github.com/seuusuario/emergikit" target="_blank" rel="noopener">GitHub</a>
+          <a href="../index.html#sugestoes">Sugerir Funcionalidade</a>
+          <a href="../index.html#sugestoes">Reportar Problema</a>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Redes</h4>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <script>document.write(new Date().getFullYear())</script> EmergiKit • Desenvolvido por William • <strong>W.S. Dev</strong> • Projeto open source</p>
+        <p class="disclaimer">Este site é informativo e não substitui atendimento médico profissional. Em emergências, ligue 192 ou 193.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacidade em Apps de Saúde: Por Que o Offline é Mais Seguro? | Blog EmergiKit</title>
+  <meta name="description" content="Descubra por que apps de saúde offline protegem melhor seus dados médicos. Entenda os riscos da nuvem, a LGPD e como manter suas informações 100% privadas.">
+  <meta name="author" content="William | W.S. Dev"/>
+  <meta name="theme-color" content="#ff453a">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Header -->
+  <header role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="header-logo" aria-label="EmergiKit - Página inicial">
+        <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0" width="108" height="108" rx="22" fill="#D32F2F"/>
+          <line x1="0" y1="0" x2="108" y2="108" stroke="#B71C1C" stroke-width="2" opacity="0.3"/>
+          <path d="M54,20 C40,20 30,30 30,45 C30,65 54,88 54,88 C54,88 78,65 78,45 C78,30 68,20 54,20 Z" fill="#FFFFFF"/>
+          <path d="M50,35 h8 v7 h7 v8 h-7 v7 h-8 v-7 h-7 v-8 h7 z" fill="#D32F2F"/>
+        </svg>
+        <span class="header-logo-text">EmergiKit</span>
+      </a>
+      
+      <nav class="header-nav" role="navigation" aria-label="Navegação do blog">
+        <a href="index.html">← Voltar ao Blog</a>
+        <a href="../index.html">Site Principal</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="../index.html#aviso-lancamento" class="btn btn-outline" style="padding:10px 16px;font-size:0.9rem">🔔 Avisar</a>
+        <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="post-content container">
+      <a href="index.html" class="back-link">← Voltar para o Blog</a>
+      
+      <div class="post-meta">
+        <span class="badge">🔒 Privacidade & Saúde</span>
+        <span style="margin-left: 8px;">20 Jun 2026 • Segurança Digital</span>
+      </div>
+      
+      <h1>Privacidade em Apps de Saúde: Por Que o Offline é Mais Seguro?</h1>
+      
+      <p>Aplicativos de saúde são cada vez mais populares, mas muitos usuários não sabem o que acontece com seus dados médicos após o cadastro. Tipo sanguíneo, alergias, medicamentos e condições crônicas são informações sensíveis que, se mal protegidas, podem ser comercializadas, vazadas ou usadas para direcionar anúncios. Neste artigo, explicamos por que a abordagem <strong>offline e local</strong> do EmergiKit oferece mais segurança e controle.</p>
+
+      <h2>️ O Risco dos Apps Baseados em Nuvem</h2>
+      <p>A maioria dos apps de saúde modernos salva tudo em servidores remotos. Embora pareça conveniente, isso traz riscos reais:</p>
+      <ul>
+        <li><strong>Vazamentos de dados:</strong> Servidores centrais são alvos frequentes de hackers</li>
+        <li><strong>Monetização indireta:</strong> Muitas empresas vendem ou compartilham dados "anonimizados" com terceiros</li>
+        <li><strong>Dependência de internet:</strong> Sem conexão, você perde acesso às suas próprias informações</li>
+        <li><strong>Termos de uso complexos:</strong> É comum autorizar "compartilhamento com parceiros" sem perceber</li>
+      </ul>
+
+      <h2>📱 O Que Significa "100% Offline"?</h2>
+      <p>Um app offline armazena todos os dados <strong>diretamente no seu dispositivo</strong>, sem enviar nada para a nuvem. No EmergiKit, isso significa:</p>
+      <ul>
+        <li>✅ Suas informações médicas nunca saem do seu celular</li>
+        <li>✅ Não há coleta de métricas de uso, localização ou hábitos</li>
+        <li>✅ Funciona em áreas sem sinal (viagens, zonas rurais, subsolos)</li>
+        <li>✅ Você é o único responsável pelo backup (exportação criptografada)</li>
+      </ul>
+
+      <h2> Como o EmergiKit Protege Seus Dados na Prática</h2>
+      <div class="tip-box">
+        <strong>🛡️ Arquitetura de Privacidade:</strong>
+        <ul style="margin-top:8px;margin-bottom:0">
+          <li><strong>Armazenamento local:</strong> SQLite criptografado no dispositivo</li>
+          <li><strong>Zero rastreamento:</strong> Sem analytics, sem cookies, sem identificadores de publicidade</li>
+          <li><strong>Backup voluntário:</strong> Exportação manual com senha AES-256 (você escolhe onde salvar)</li>
+          <li><strong>Código aberto:</strong> Qualquer desenvolvedor pode auditar e verificar a ausência de backdoors</li>
+        </ul>
+      </div>
+
+      <h2> LGPD e Saúde Digital</h2>
+      <p>Com a Lei Geral de Proteção de Dados (LGPD), dados de saúde são classificados como <strong>"dados sensíveis"</strong>, exigindo consentimento explícito e proteção reforçada. Apps que armazenam na nuvem precisam de servidores adequados, políticas rigorosas e auditorias constantes. O modelo offline elimina essa cadeia de risco: se os dados não saem do seu aparelho, não há servidor para ser hackeado nem empresa para vender suas informações.</p>
+
+      <h2>✅ 5 Dicas para Proteger Seus Dados em Qualquer App de Saúde</h2>
+      <ol>
+        <li><strong>Leia a Política de Privacidade:</strong> Procure por "compartilhamento com terceiros", "analytics" ou "serviços de nuvem"</li>
+        <li><strong>Desative permissões desnecessárias:</strong> Um app de emergência não precisa acessar sua galeria, contatos ou microfone sem motivo</li>
+        <li><strong>Prefira apps com criptografia local:</strong> Verifique se há opção de backup com senha</li>
+        <li><strong>Atualize regularmente:</strong> Versões antigas podem ter falhas de segurança corrigidas</li>
+        <li><strong>Desinstale apps que não usa:</strong> Dados antigos acumulados aumentam o risco de exposição</li>
+      </ol>
+
+      <h2> Por Que Escolher o EmergiKit?</h2>
+      <p>O EmergiKit foi criado com uma premissa clara: <strong>saúde é direito, privacidade é obrigação</strong>. Sem assinaturas obrigatórias, sem anúncios intrusivos e sem coleta de dados. Você configura uma vez, guarda seus dados com segurança e tem paz de espírito para focar no que realmente importa: sua saúde e a de quem você ama.</p>
+      <p>🔗 <a href="../index.html" style="color:var(--primary);text-decoration:underline">Conheça o EmergiKit e baixe gratuitamente</a></p>
+
+      <div class="disclaimer">
+        <strong>⚠️ Aviso Importante:</strong>
+        <p>Este artigo tem fins informativos sobre segurança digital e privacidade. Não constitui orientação jurídica ou técnica especializada. Para dúvidas sobre a LGPD ou proteção de dados pessoais, consulte a Autoridade Nacional de Proteção de Dados (ANPD) ou um advogado especializado. O EmergiKit não coleta, armazena ou compartilha dados de usuários em servidores externos.</p>
+        <p style="margin-top: 8px; font-size: 0.85rem; opacity: 0.9">
+          <em>Fontes consultadas: Lei nº 13.709/2018 (LGPD), Autoridade Nacional de Proteção de Dados (ANPD), OWASP Mobile Security Guidelines, Mozilla Foundation (Privacy Not Included).</em>
+        </p>
+      </div>
+    </div>
+
+    <!-- Espaço para Anúncio -->
+    <div class="container">
+      <div class="ad-container" role="complementary" aria-label="Anúncio de apoio ao projeto">
+        <div>
+          <div class="ad-label">Anúncio • Apoie o Projeto</div>
+          <div id="ad-slot">
+            <p style="margin:0; line-height:1.4">Espaço para anúncio discreto<br><small style="opacity:0.7">Sem pop-ups • Sem rastreamento • Apenas para manter o projeto</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© <script>document.write(new Date().getFullYear())</script> EmergiKit • <a href="../privacidade.html">Privacidade</a> • <a href="index.html">Blog</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

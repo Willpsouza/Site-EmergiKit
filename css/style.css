@@ -165,3 +165,41 @@ footer { background: var(--surface); border-top: 1px solid var(--border); paddin
 a:focus, button:focus, .faq-question:focus { outline: 2px solid var(--primary); outline-offset: 2px; }
 .skip-link { position: absolute; top: -40px; left: 0; background: var(--primary); color: white; padding: 8px 16px; z-index: 1000; text-decoration: none; font-weight: 500; }
 .skip-link:focus { top: 0; }
+
+/* --- BLOG STYLES --- */
+.blog-list { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.post-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; transition: all 0.2s; }
+.post-card:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow); }
+.post-date { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px; }
+.post-title { font-size: 1.3rem; margin-bottom: 8px; }
+.post-title a { color: var(--text); text-decoration: none; }
+.post-title a:hover { color: var(--primary); }
+.post-excerpt { color: var(--text-dim); line-height: 1.6; margin-bottom: 0; }
+
+.post-content { max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: var(--text); }
+.post-meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; display: block; }
+.post-content h1 { font-size: 2rem; margin-bottom: 16px; }
+.post-content h2 { font-size: 1.5rem; margin-top: 32px; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.post-content p { margin-bottom: 16px; }
+.post-content ul, .post-content ol { margin-bottom: 16px; padding-left: 24px; }
+.post-content li { margin-bottom: 8px; }
+
+.disclaimer { background: rgba(255, 69, 58, 0.08); border-left: 4px solid var(--primary); padding: 16px; margin: 40px 0; border-radius: 8px; font-size: 0.9rem; color: var(--text-dim); }
+.back-link { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 24px; color: var(--primary); text-decoration: none; font-weight: 500; transition: opacity 0.2s; }
+.back-link:hover { opacity: 0.8; text-decoration: underline; }
+.tip-box { background: var(--surface-elevated); border: 1px solid var(--border); padding: 16px; border-radius: 12px; margin: 24px 0; }
+
+/* Blog Sections */
+.blog-section { padding: 20px 0; border-top: 1px solid var(--border); }
+.blog-section:first-of-type { border-top: none; }
+.blog-section .section-title { scroll-margin-top: 80px; } /* Compensa header fixo */
+.blog-list { display: grid; gap: 20px; }
+
+/* Post Cards com badge */
+.post-card .post-date { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.post-card .badge { font-size: 0.75rem; padding: 4px 10px; }
+
+/* Placeholders "Em breve" */
+.post-card[style*="opacity:0.7"] { cursor: not-allowed; }
+.post-card[style*="opacity:0.7"] .post-title a { pointer-events: none; color: var(--text-muted); }
+.post-card[style*="opacity:0.7"]:hover { transform: none !important; border-color: var(--border) !important; }
