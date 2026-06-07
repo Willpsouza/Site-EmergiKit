@@ -1,30 +1,21 @@
-# As a condition of accessing this website, you agree to abide by the following
-# content signals:
-# ... (mantenha todo o bloco "BEGIN Cloudflare Managed content" até "END") ...
-
-# BEGIN Cloudflare Managed content
-User-agent: *
-Content-Signal: search=yes,ai-train=no
+# ===== REGRAS DO CLOUDFLARE (modificadas) =====
+User-agent: Googlebot
 Allow: /
+Allow: /sitemap.xml
 
-User-agent: Amazonbot
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+
+# Bloqueia apenas bots de AI (não afeta Google Search)
+User-agent: GPTBot
 Disallow: /
-# ... (todos os outros User-agents do Cloudflare) ...
-User-agent: meta-externalagent
+
+User-agent: CCBot
 Disallow: /
-# END Cloudflare Managed Content
 
-# ===== CONFIGURAÇÕES PERSONALIZADAS DO EMERGIKIT =====
+User-agent: ClaudeBot
+Disallow: /
 
-# Permite CSS/JS para renderização mobile-first do Google
-Allow: /css/
-Allow: /js/
-
-# Bloqueia arquivos sensíveis ou desnecessários
-Disallow: /node_modules/
-Disallow: /vscode/
-Disallow: /*.log$
-Disallow: /*.env$
-
-# Sitemap (FORA de qualquer bloco User-agent, no final)
+# Sitemap (sempre no final, fora de blocos)
 Sitemap: https://emergikit.com.br/sitemap.xml
