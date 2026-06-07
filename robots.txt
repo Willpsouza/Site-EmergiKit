@@ -1,21 +1,4 @@
-# ===== REGRAS DO CLOUDFLARE (modificadas) =====
-User-agent: Googlebot
-Allow: /
-Allow: /sitemap.xml
-
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
 
-# Bloqueia apenas bots de AI (não afeta Google Search)
-User-agent: GPTBot
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-# Sitemap (sempre no final, fora de blocos)
 Sitemap: https://emergikit.com.br/sitemap.xml
