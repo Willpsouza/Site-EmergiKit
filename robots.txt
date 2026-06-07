@@ -1,10 +1,24 @@
-# robots.txt para EmergiKit
-# Permite que todos os robôs de busca indexem o site
+# As a condition of accessing this website, you agree to abide by the following
+# content signals:
+# ... (mantenha todo o bloco "BEGIN Cloudflare Managed content" até "END") ...
+
+# BEGIN Cloudflare Managed content
 User-agent: *
+Content-Signal: search=yes,ai-train=no
 Allow: /
 
-# ✅ Permite CSS/JS para renderização correta no Google (mobile-first indexing)
-# Removido: Disallow: /css/ e /js/
+User-agent: Amazonbot
+Disallow: /
+# ... (todos os outros User-agents do Cloudflare) ...
+User-agent: meta-externalagent
+Disallow: /
+# END Cloudflare Managed Content
+
+# ===== CONFIGURAÇÕES PERSONALIZADAS DO EMERGIKIT =====
+
+# Permite CSS/JS para renderização mobile-first do Google
+Allow: /css/
+Allow: /js/
 
 # Bloqueia arquivos sensíveis ou desnecessários
 Disallow: /node_modules/
@@ -12,8 +26,5 @@ Disallow: /vscode/
 Disallow: /*.log$
 Disallow: /*.env$
 
-# Permite XML do sitemap (necessário para indexação)
-Allow: /sitemap.xml
-
-# Indica onde está o sitemap
+# Sitemap (FORA de qualquer bloco User-agent, no final)
 Sitemap: https://emergikit.com.br/sitemap.xml
