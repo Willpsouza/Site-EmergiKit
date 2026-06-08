@@ -1,4 +1,33 @@
+# Cloudflare + EmergiKit - Versão Unificada
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
+Content-Signal: search=yes,ai-train=no
 
+# Bloqueia apenas bots de AI (não afeta Google Search)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# Sitemap sempre no final
 Sitemap: https://emergikit.com.br/sitemap.xml
